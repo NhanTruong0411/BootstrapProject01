@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Syne Mono', monospace;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+}
+
+
+
+
+/* Navigation Section */
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: 0.3s all;
+}
+.nav-link:hover {
+  color: #6648b1 !important;
+}
+/* end of Navigation Section */
+
+
+
+
+/* Carousel (Images slide section) */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+}
+.btn-primary {
+  background-color: #6648b1 !important;
+  border: 1px solid #563d7c !important;
+  transition: 0.4s all;
+}
+.btn-primary:hover {
+  background-color: #563d7c!important;
+}
+.carousel-caption button {
+  margin: 1.5rem .5rem;
+}
+/* end of Carousel (Images slide section) */
+
+
+
+
+/* Jumbotron Section */
+.jumbotron {
+  padding: 3rem !important;
+  border-radius: 0 !important;
+}
+/* end of Jumbotron Section */
+
+
+
+
+
+/* 3 Symbols Section */
+.padding {
+  padding-bottom: 3rem !important;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 3px solid #b4b4b4;
+  width: 95%;
+}
+
+.fa-code {
+  color: #e54d26;
+}
+.fa-bold {
+  color: #563d7c;
+}
+.fa-css3 {
+  color: #2163af;
+}
+
+.fa-code,
+.fa-bold,
+.fa-css3 {
+  font-size: 4rem;
+  margin: 1.5rem;
+}
+/* end of 3 Symbols Section */
+
+
+
+
+/* Fixed Background Section */
+#fixed {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.2)),url(./img/background2.png) ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  max-width: 100%
+}
+/* end of Fixed Background Section */
+
+
+
+
+
+/* Emoji Section */
+.fun {
+  width: 100%;
+  color: #fff;
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  transition: 0.5s all;
+}
+.fun:hover {
+  background-color: #563d7c;
+  box-decoration-break: 2px solid #563d7c;
+}
+.gif {
+  max-width: 100%;
+}
+/* end of Emoji Section */
+
+
+
+
+/* Connect Section */
+.social a {
+  font-size: 4.5rem;
+  padding: 3rem;
+}
+
+.fa-facebook  {
+  color: #3b5999;
+  transition: 0.3s all;
+}
+.fa-twitter {
+  color: #55acee;
+  transition: 0.3s all;
+}
+.fa-google-plus-g {
+  color: #dd4b39;
+  transition: 0.3s all;
+}
+.fa-instagram {
+  color: #e4405f;
+  transition: 0.3s all;
+}
+.fa-youtube {
+  color: #cd201f;
+  transition: 0.3s all;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
+/* end of Connect Section */
+
+
+
+
+/* Footer Section */
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+footer img {
+  margin-bottom: 1rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin: 1.5rem auto;
+}
+/* end of Footer Section */
+
+
+
+
+/* Media Queries */
+@media  (max-width: 992px) {
+  .social a {
+    font-size: 3.5rem;
+    padding: 2rem;
+  }
+}
+
+
+
+
+@media  (max-width: 768px) {
+  .carousel-caption {
+    top: 15%;
+    transform: translateY(-10%);
+  }
+ 
+  .carousel-caption h3 {
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+    padding-bottom: .2rem;
+  }
+  .display-4 {
+    font-size: 200% !important;
+  }
+  .social a {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+
+
+
+@media  (max-width: 576px) {
+  .carousel-caption {
+    top: 15%;
+    transform: translateY(-10%);
+  }
+  .carousel-caption h1 {
+    font-size: 2rem !important;
+
+  }
+  .carousel-caption h3 {
+    font-size: 1.6rem !important;
+  } 
+  .carousel-caption .btn {
+    font-size: 80%;
+    margin: .5rem 0.5rem
+  }
+  .social a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+
+
+
+@media  (max-width: 450px) {
+  .carousel-caption {
+    top: 5%;
+    transform: translateY(-10%);
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem !important;
+
+  }
+  .carousel-caption h3 {
+    font-size: 1rem !important;
+  } 
+  .carousel-caption .btn {
+    font-size: 60%;
+    margin: .2rem .2rem;
+    padding: .5rem .5rem;
+  }
+  .social a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* end of Media Queries */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
